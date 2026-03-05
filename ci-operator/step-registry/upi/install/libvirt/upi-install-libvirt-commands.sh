@@ -251,7 +251,7 @@ else
 
   # Generate manifests for cluster modifications
   echo "Generating manifests..."
-  ${OCPINSTALL} --dir "${INSTALL_DIR}" create manifests
+  ${OCPINSTALL} --dir "${INSTALL_DIR}" create manifests --stream rhel-10
 fi
 
 # Check for the node tuning yaml config, and save it in the installation directory
